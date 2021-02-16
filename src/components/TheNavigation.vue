@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar app>
+    <v-app-bar app absolute>
       <v-img
         class="mr-4 ml-12"
         src="@/assets/logo.png"
@@ -20,8 +20,9 @@
         class="hidden-sm-and-up"
       ></v-app-bar-nav-icon>
       <v-btn
+        dark
+        large
         to="/register"
-        color="primary"
         elevation="2"
         class="pa-4 ml-4 hidden-xs-only"
       >
