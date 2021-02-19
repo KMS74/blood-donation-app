@@ -16,13 +16,13 @@
           </v-card>
         </v-col>
         <v-col class="my-0 py-0" cols="12" sm="6">
-          <v-text-field label="الاسم الكامل" solo></v-text-field
+          <v-text-field dense label="الاسم الكامل" solo></v-text-field
         ></v-col>
         <v-col class="my-0 py-0" cols="12" sm="6">
-          <v-text-field label="البريد الالكتروني" solo></v-text-field
+          <v-text-field dense label="البريد الالكتروني" solo></v-text-field
         ></v-col>
         <v-col class="my-0 py-0" cols="12">
-          <v-textarea solo name="input-7-4" label="رسالة"></v-textarea>
+          <v-textarea denses solo name="input-7-4" label="رسالة"></v-textarea>
           <v-btn large dark>ارسال</v-btn>
         </v-col>
       </v-row>

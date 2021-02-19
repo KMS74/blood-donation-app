@@ -26,7 +26,7 @@
         elevation="2"
         class="pa-4 ml-4 hidden-xs-only"
       >
-        تسجيل دخول
+        تسجيل الدخول
       </v-btn>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute temporary left>
