@@ -9,7 +9,9 @@ export default new Vuex.Store({
   state: {
     bloodBanks: [],
     donorUser: null,
-    token: null
+    token: null,
+    searchedDonors: [],
+    isFoundDonors: null
   },
   getters: {
     getBloodBnaksNames(state) {
@@ -21,6 +23,9 @@ export default new Vuex.Store({
     },
     getDonorData(state) {
       return state.donorUser;
+    },
+    getSearchedDonors(state) {
+      return state.searchedDonors;
     },
 
     isAuthenticated(state) {
@@ -35,9 +40,15 @@ export default new Vuex.Store({
       state.token = donorUserData.jwt;
       state.donorUser = donorUserData.user;
     },
+    updateIsFoundDonors(state, payload) {
+      state.isFoundDonors = payload;
+    },
     removeAuthDonorData(state) {
       state.token = null;
       state.donorUser = null;
+    },
+    updateSearchedDonos(state, searchedDonosrData) {
+      state.searchedDonors = searchedDonosrData;
     }
   },
   actions: {
@@ -48,6 +59,22 @@ export default new Vuex.Store({
           commit("updateBloodBanks", response.data);
         })
         .catch(error => console.log(error));
+    },
+    async searchForDonors({ commit }, formData) {
+      try {
+        const response = await axios.get("/donors/get", {
+          params: formData
+        });
+        console.log(response.data);
+        if (response.data.length > 0) {
+          commit("updateSearchedDonos", response.data);
+          commit("updateIsFoundDonors", true);
+        } else {
+          commit("updateIsFoundDonors", false);
+        }
+      } catch (error) {
+        console.log(error);
+      }
     },
 
     async signup({ commit }, authData) {
