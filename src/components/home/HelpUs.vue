@@ -5,7 +5,7 @@
         <v-col class="my-0 py-0" cols="12">
           <v-card elevation="0">
             <v-card-title>
-              <h1 class="display-2">ادعمنا</h1>
+              <h1 class="display-2 red--text">ادعمنا</h1>
             </v-card-title>
             <v-card-text>
               <p class="headline">
@@ -23,7 +23,7 @@
         ></v-col>
         <v-col class="my-0 py-0" cols="12">
           <v-textarea denses solo name="input-7-4" label="رسالة"></v-textarea>
-          <v-btn large dark>ارسال</v-btn>
+          <v-btn large dark color="red darken-2">ارسال</v-btn>
         </v-col>
       </v-row>
     </v-container>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container>
-      <h1 class="display-2 my-4">أسئلة شائعة</h1>
+      <h1 class="display-2 my-4 red--text">أسئلة شائعة</h1>
       <v-expansion-panels>
         <v-expansion-panel class="mb-4" v-for="(item, i) in 5" :key="i">
           <v-expansion-panel-header>

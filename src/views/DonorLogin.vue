@@ -1,7 +1,7 @@
 <template>
   <v-container class="mt-12 pt-12">
     <v-row align="center" justify="center">
-      <p class="text-center display-3">
+      <p class="text-center display-3 red--text">
         تسجيل الدخول
       </p>
     </v-row>
@@ -28,8 +28,10 @@
           label="كلمة المرور"
           @click:append="show = !show"
         ></v-text-field>
-        <v-btn @click.prevent="login" dark block large>تسجيل دخول</v-btn>
-        <v-btn class="mt-5 primary--text" text link>نسيت كلمة المرور</v-btn>
+        <v-btn @click.prevent="login" dark block large color="red"
+          >تسجيل دخول</v-btn
+        >
+        <v-btn class="mt-5 " text color="black" link>نسيت كلمة المرور</v-btn>
       </v-col>
     </v-row>
   </v-container>

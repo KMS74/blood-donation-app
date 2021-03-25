@@ -1,7 +1,9 @@
 <template>
   <v-container class="mt-12 pt-12">
     <v-row align="center" justify="center">
-      <h1 class="display-2 font-weight-bold">البحث عن متبرعين بالدم</h1>
+      <h1 class="display-2 font-weight-bold red--text">
+        البحث عن متبرعين بالدم
+      </h1>
     </v-row>
     <v-row class="mt-12">
       <v-col cols="6">
@@ -24,7 +26,14 @@
       </v-col>
     </v-row>
     <v-row align="center" justify="center">
-      <v-btn @click.prevent="searchDonors" dark x-large width="200">
+      <v-btn
+        @click.prevent="searchDonors"
+        color="red darken-1
+"
+        dark
+        x-large
+        width="200"
+      >
         <v-icon left>fas fa-search</v-icon>
         ابحث
       </v-btn>
@@ -39,8 +48,10 @@
     </v-row>
     <v-row v-if="isFoundDonors === true" class="mt-12 pt-12">
       <v-col cols="4" v-for="donor in donors" :key="donor._id">
-        <v-card elevation="1" shaped>
-          <v-card-title class="justify-center headline font-weight-bold">
+        <v-card elevation="2">
+          <v-card-title
+            class="justify-center headline font-weight-bold red--text"
+          >
             <div>
               {{
                 donor.firstName + " " + donor.lastName + " " + donor.bloodGroup

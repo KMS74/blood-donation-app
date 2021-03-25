@@ -3,7 +3,7 @@
     <v-row>
       <v-card elevation="0">
         <v-card-title>
-          <h1 class="display-2">عملية التبرع بالدم</h1>
+          <h1 class="display-2 red--text">عملية التبرع بالدم</h1>
         </v-card-title>
         <v-card-text>
           <p class="headline">
@@ -16,33 +16,29 @@
       </v-card>
     </v-row>
     <v-row>
-      <h1 class="headline pr-5">مراحل التبرع بالدم من خلال موقعنا</h1>
+      <h1 class="headline pr-5 red--text">مراحل التبرع بالدم من خلال موقعنا</h1>
       <v-col cols="12">
         <v-card class="mb-5">
           <v-card-title>
-            <v-icon color="black" medium class="ml-5" right>fas fa-edit</v-icon>
+            <v-icon color="red" medium class="ml-5" right>fas fa-edit</v-icon>
             مرحلة تسجيل الدخول وانشاء حساب كمتبرع للدم
           </v-card-title>
         </v-card>
         <v-card class="mb-5">
           <v-card-title>
-            <v-icon color="black" medium class="ml-5" right
-              >fas fa-search</v-icon
-            >
+            <v-icon color="red" medium class="ml-5" right>fas fa-search</v-icon>
 
             مرحل البحث عن اقرب مركز طبي او بنك دم للتبرع بالدم
           </v-card-title> </v-card
         ><v-card class="mb-5">
           <v-card-title>
-            <v-icon color="black" large class="ml-5" right>mdi-alarm</v-icon>
+            <v-icon color="red" large class="ml-5" right>mdi-alarm</v-icon>
 
             مرحلة تسجيل الوقت و التاريخ للتبرع بالدم</v-card-title
           > </v-card
         ><v-card class="mb-5">
           <v-card-title>
-            <v-icon color="black" large class="ml-4" right
-              >fas fa-walking</v-icon
-            >
+            <v-icon color="red" large class="ml-4" right>fas fa-walking</v-icon>
             مرحلة الذهاب الي بنك الدم للتبرع بالدم</v-card-title
           >
         </v-card>

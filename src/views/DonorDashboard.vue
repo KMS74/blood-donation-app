@@ -31,9 +31,9 @@
         </v-list>
       </v-menu>
     </v-app-bar>
-    <v-main>
+    <v-container>
       <router-view></router-view>
-    </v-main>
+    </v-container>
   </div>
 </template>
 <script>

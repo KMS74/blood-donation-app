@@ -4,7 +4,9 @@
       <v-col lg="7">
         <v-card elevation="0">
           <v-card-title class="my-5">
-            <h1 class="display-4 font-weight-bold text-break text-right">
+            <h1
+              class="display-4 red--text  font-weight-bold text-break text-right"
+            >
               تبرع بالدم انقذ حياة انسان
             </h1>
           </v-card-title>
@@ -14,7 +16,14 @@
             </p>
           </v-card-subtitle>
           <v-card-actions>
-            <v-btn dark large to="/register" elevation="2" class="pa-4 ">
+            <v-btn
+              dark
+              color="red darken-2"
+              large
+              to="/register"
+              elevation="2"
+              class="pa-4 "
+            >
               تبرع الان
             </v-btn>
           </v-card-actions>

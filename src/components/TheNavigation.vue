@@ -20,6 +20,7 @@
         class="hidden-sm-and-up"
       ></v-app-bar-nav-icon>
       <v-btn
+        color="red darken-2"
         dark
         large
         to="/register"

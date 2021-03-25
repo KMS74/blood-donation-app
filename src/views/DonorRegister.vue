@@ -7,9 +7,10 @@
           back-button-text=" السابق"
           finish-button-text="تسجيل الدخول"
           @on-complete="onComplete"
-          color="#4D4D4D"
+          color="#F44336
+"
         >
-          <h1 class="display-1 font-weight-bold" slot="title">
+          <h1 class="display-1 red--text font-weight-bold" slot="title">
             تسجيل الدخول كمتبرع للدم
           </h1>
           <p class=".subtitle-1 text--secondary" slot="title">
@@ -193,7 +194,7 @@
           </tab-content>
           <!-- end third step -->
         </form-wizard>
-        <v-btn to="/login" text color="primary">لدي حساب مسبقا</v-btn>
+        <v-btn to="/login" text color="black">لدي حساب مسبقا</v-btn>
       </v-col>
     </v-row>
   </v-container>
